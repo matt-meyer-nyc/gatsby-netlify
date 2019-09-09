@@ -13,9 +13,17 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gatsby": "^2.13.61",
+    "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-source-filesystem": "^2.1.11",
+    "gatsby-source-wordpress": "^3.1.28",
+    "gatsby-transformer-remark": "^2.6.15",
+    "innertext": "^1.0.3",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-bootstrap": "^1.0.0-beta.11",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"

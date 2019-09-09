@@ -6,4 +6,31 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Gatsby Bootstrap",
+    description: "This is the description of the description",
+    keywords: "gatsby, gatsbyjs project, bootstrap",
+    image: "/static/download.jpeg",
+    url: 'http://www.mattjacobmusic.com/'
+    
+  },
+  plugins: [   
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    { resolve: `gatsby-transformer-remark`},
+    {resolve: `gatsby-source-wordpress`, options: {
+      baseUrl: `mattjacobmusic.com`,
+      protocol: `http`,
+      hostingWPCOM: false
+    },
+  },
+   `gatsby-plugin-react-helmet`
+  ],
 }
+
+
