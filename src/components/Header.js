@@ -6,7 +6,7 @@ import {Link} from "gatsby";
 const Header = (props) => (
 
     <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/">Gatsby-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="/">Gatsby-Bootstrap-Demo</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

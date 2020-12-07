@@ -6,6 +6,7 @@ export default () => (
 
     <PrimaryLayout column="col-10">    
         <div className="pt-5">
+					  <p><i>for display in app demo only (non-functional)</i></p>
             <h1>Contact Us</h1>
             <Form>
                 <Form.Group controlId="contactForm.Email">

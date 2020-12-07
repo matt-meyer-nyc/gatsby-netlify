@@ -7,7 +7,7 @@ import innertext from "innertext"
 
 const BlogpostLayout = ({ data }) => {
   const post = data.wordpressPost
-  console.log(post)
+  console.log("post ", post)
   return (
     <div>
       <SEO
@@ -30,25 +30,16 @@ const BlogpostLayout = ({ data }) => {
 
 export default BlogpostLayout
 
-// export const query = graphql`
-//   query($slug: String!) {
-//     wordpressPost(slug: { eq: $slug }) {
-//       content
-//       title
-//       featured_media {
-//         source_url
-//       }
-//       categories {
-//         name
-//       }
-//       excerpt
-//     }
-//   }
-// `
 export const query = graphql`
   query($slug: String!) {
-  wordpressPost(slug: { eq: $slug}, featured_media: {source_url: {}}, categories: {}) {
-    content
-	}
-}
+    wordpressPost(slug: { eq: $slug }) {
+      content
+      title
+      featured_media {
+        source_url
+      }
+      categories
+      excerpt
+    }
+  }
 `
