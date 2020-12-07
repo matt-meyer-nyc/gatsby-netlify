@@ -11,10 +11,9 @@ module.exports = {
     description: "This is the description of the description",
     keywords: "gatsby, gatsbyjs project, bootstrap",
     image: "/static/download.jpeg",
-    url: 'http://www.mattjacobmusic.com/'
-    
+    url: "https://practice.codingsrc.com/",
   },
-  plugins: [   
+  plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,15 +21,15 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    { resolve: `gatsby-transformer-remark`},
-    {resolve: `gatsby-source-wordpress`, options: {
-      baseUrl: `mattjacobmusic.com`,
-      protocol: `http`,
-      hostingWPCOM: false
+    { resolve: `gatsby-transformer-remark` },
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        baseUrl: `practice.codingsrc.com/`,
+        protocol: `http`,
+        hostingWPCOM: false,
+      },
     },
-  },
-   `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
   ],
 }
-
-
